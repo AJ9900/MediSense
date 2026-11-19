@@ -309,91 +309,91 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            {/* Service 1 */}
-            <div className="bg-slate-50 hover:bg-white p-8 rounded-3xl border border-slate-200 hover:border-sky-300 shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-sky-600 group-hover:text-white transition-all">
+            {/* Service 1 - Sunset Orange / Coral */}
+            <div className="bg-white p-8 rounded-3xl border border-slate-200/90 hover:border-[#FF5841] shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 rounded-2xl bg-[#FFF0ED] text-[#FF5841] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#FF5841] group-hover:text-white transition-all">
                 <Sparkles className="w-7 h-7" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">AI Symptom Intake & Triage</h4>
               <p className="text-slate-600 text-sm leading-relaxed mb-5">
                 Describe your health symptoms in natural language. Our AI engine recommends the most appropriate specialty department and detects emergency red flags immediately.
               </p>
-              <Link to="/#ai-assistant" className="inline-flex items-center text-sm font-bold text-sky-600 hover:text-sky-700">
+              <Link to="/#ai-assistant" className="inline-flex items-center text-sm font-bold text-[#FF5841] hover:text-[#e6432d]">
                 <span>Try AI Triage</span>
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
 
-            {/* Service 2 */}
-            <div className="bg-slate-50 hover:bg-white p-8 rounded-3xl border border-slate-200 hover:border-sky-300 shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 rounded-2xl bg-teal-100 text-teal-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-teal-600 group-hover:text-white transition-all">
+            {/* Service 2 - Medical Teal #09A1A1 */}
+            <div className="bg-white p-8 rounded-3xl border border-slate-200/90 hover:border-[#09A1A1] shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 rounded-2xl bg-[#edfafa] text-[#09A1A1] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#09A1A1] group-hover:text-white transition-all">
                 <Stethoscope className="w-7 h-7" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Specialist Doctor Appointments</h4>
               <p className="text-slate-600 text-sm leading-relaxed mb-5">
                 Search verified medical specialists by department, experience, and patient ratings. Check live calendar availability and book guaranteed consultation slots.
               </p>
-              <Link to="/doctors" className="inline-flex items-center text-sm font-bold text-teal-600 hover:text-teal-700">
+              <Link to="/doctors" className="inline-flex items-center text-sm font-bold text-[#09A1A1] hover:text-[#068485]">
                 <span>Explore Doctors</span>
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
 
-            {/* Service 3 */}
-            <div className="bg-slate-50 hover:bg-white p-8 rounded-3xl border border-slate-200 hover:border-sky-300 shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+            {/* Service 3 - Steel Blue #5484A4 */}
+            <div className="bg-white p-8 rounded-3xl border border-slate-200/90 hover:border-[#5484A4] shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 rounded-2xl bg-[#f2f6f9] text-[#5484A4] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#5484A4] group-hover:text-white transition-all">
                 <Clock className="w-7 h-7" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Zero-Queue Digital Tokens</h4>
               <p className="text-slate-600 text-sm leading-relaxed mb-5">
                 Physical lines are obsolete. Receive a mobile digital token tracked by our ML Random Forest model, providing precise real-time notifications when your doctor is ready.
               </p>
-              <Link to="/queue-display" target="_blank" className="inline-flex items-center text-sm font-bold text-indigo-600 hover:text-indigo-700">
+              <Link to="/queue-display" target="_blank" className="inline-flex items-center text-sm font-bold text-[#5484A4] hover:text-[#426b89]">
                 <span>View Live Queue TV</span>
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
 
-            {/* Service 4 */}
-            <div className="bg-slate-50 hover:bg-white p-8 rounded-3xl border border-slate-200 hover:border-sky-300 shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-amber-600 group-hover:text-white transition-all">
+            {/* Service 4 - Seashell Peach #F6C992 */}
+            <div className="bg-white p-8 rounded-3xl border border-slate-200/90 hover:border-[#F6C992] shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 rounded-2xl bg-[#fffbf5] text-[#c88c49] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#F6C992] group-hover:text-slate-900 transition-all">
                 <Compass className="w-7 h-7" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Hospital Indoor Navigation</h4>
               <p className="text-slate-600 text-sm leading-relaxed mb-5">
                 Never get lost in hospital hallways. Step-by-step digital guidance directs patients directly from OPD room to radiology, blood sample collection, and pharmacy.
               </p>
-              <Link to="/services" className="inline-flex items-center text-sm font-bold text-amber-600 hover:text-amber-700">
+              <Link to="/services" className="inline-flex items-center text-sm font-bold text-[#c88c49] hover:text-[#a36a33]">
                 <span>Learn Navigation</span>
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
 
-            {/* Service 5 */}
-            <div className="bg-slate-50 hover:bg-white p-8 rounded-3xl border border-slate-200 hover:border-sky-300 shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+            {/* Service 5 - Dusty Rose #D396A6 */}
+            <div className="bg-white p-8 rounded-3xl border border-slate-200/90 hover:border-[#D396A6] shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 rounded-2xl bg-[#faf4f6] text-[#D396A6] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#D396A6] group-hover:text-white transition-all">
                 <HeartPulse className="w-7 h-7" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Digital Prescriptions & Records</h4>
               <p className="text-slate-600 text-sm leading-relaxed mb-5">
                 Say goodbye to lost paper slips. Certified doctors upload digital prescriptions, dosage instructions, and test requests straight into your encrypted patient record.
               </p>
-              <Link to="/login" className="inline-flex items-center text-sm font-bold text-emerald-600 hover:text-emerald-700">
+              <Link to="/login" className="inline-flex items-center text-sm font-bold text-[#D396A6] hover:text-[#a65d70]">
                 <span>Access Records</span>
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
 
-            {/* Service 6 */}
-            <div className="bg-slate-50 hover:bg-white p-8 rounded-3xl border border-slate-200 hover:border-sky-300 shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all">
+            {/* Service 6 - Deep Slate Garnet #30525C / Red-Violet */}
+            <div className="bg-white p-8 rounded-3xl border border-slate-200/90 hover:border-[#C53678] shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 rounded-2xl bg-[#fdf2f7] text-[#C53678] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#C53678] group-hover:text-white transition-all">
                 <Building2 className="w-7 h-7" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Admin Resource Command Center</h4>
               <p className="text-slate-600 text-sm leading-relaxed mb-5">
                 Hospital administrators can monitor ICU bed occupancy, emergency oxygen cylinders, doctor workloads, and run predictive "What-If" crisis simulations.
               </p>
-              <Link to="/about" className="inline-flex items-center text-sm font-bold text-purple-600 hover:text-purple-700">
+              <Link to="/about" className="inline-flex items-center text-sm font-bold text-[#C53678] hover:text-[#8e194e]">
                 <span>Explore Command Hub</span>
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Link>
@@ -473,10 +473,10 @@ export default function Home() {
                     
                     {/* Top Row: Avatar + Department Badge */}
                     <div className="flex items-start justify-between">
-                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-100 to-teal-100 border border-sky-200 flex items-center justify-center text-sky-700 font-black text-xl shadow-inner">
+                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-[#FFF0ED] via-[#FDF0F6] to-[#edfafa] border border-[#FFD5CE] flex items-center justify-center text-[#FF5841] font-black text-xl shadow-inner">
                         {doc.userId?.name ? doc.userId.name.replace('Dr. ', '').charAt(0) : 'D'}
                       </div>
-                      <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200">
+                      <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-[#FFF0ED] text-[#FF5841] border border-[#FFD5CE]">
                         {doc.department}
                       </span>
                     </div>
@@ -520,7 +520,7 @@ export default function Home() {
                   <div className="pt-6 mt-2">
                     <button
                       onClick={() => handleBookClick(doc)}
-                      className="w-full flex items-center justify-center space-x-2 bg-sky-50 hover:bg-sky-600 text-sky-700 hover:text-white font-bold text-xs py-3 rounded-xl border border-sky-200 hover:border-sky-600 transition-all duration-200"
+                      className="w-full flex items-center justify-center space-x-2 bg-[#FFF0ED] hover:bg-[#FF5841] text-[#FF5841] hover:text-white font-bold text-xs py-3 rounded-xl border border-[#FFD5CE] hover:border-[#FF5841] transition-all duration-200"
                     >
                       <Calendar className="w-4 h-4" />
                       <span>{user ? 'Book Appointment' : 'Sign in to Book Slot'}</span>
@@ -603,25 +603,25 @@ export default function Home() {
 
 
       {/* 5. INTERACTIVE AI HEALTH ASSISTANT SECTION */}
-      <section id="ai-assistant" className="py-20 bg-gradient-to-br from-slate-900 via-sky-950 to-slate-900 text-white relative overflow-hidden">
+      <section id="ai-assistant" className="py-20 bg-gradient-to-br from-[#30525C] via-slate-900 to-[#18181b] text-white relative overflow-hidden">
         
         {/* Glow Effects */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#09A1A1]/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#FF5841]/15 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             {/* Left Info */}
             <div className="lg:col-span-5 space-y-6 text-center lg:text-left">
-              <div className="inline-flex items-center space-x-2 bg-teal-500/20 border border-teal-500/40 px-3.5 py-1.5 rounded-full text-xs font-bold text-teal-300">
-                <Sparkles className="w-4 h-4 text-teal-400" />
+              <div className="inline-flex items-center space-x-2 bg-[#09A1A1]/20 border border-[#09A1A1]/40 px-3.5 py-1.5 rounded-full text-xs font-bold text-[#75ced3]">
+                <Sparkles className="w-4 h-4 text-[#09A1A1]" />
                 <span>Interactive AI Intelligence</span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight">
                 Try the MediSense <br />
-                <span className="text-sky-400">AI Health Assistant</span>
+                <span className="bg-gradient-to-r from-[#F6C992] via-[#FF5841] to-[#D396A6] bg-clip-text text-transparent">AI Health Assistant</span>
               </h2>
 
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
@@ -692,7 +692,7 @@ export default function Home() {
                   <button
                     type="submit"
                     disabled={aiLoading || !aiQuery.trim()}
-                    className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-sky-500 to-teal-500 hover:from-sky-600 hover:to-teal-600 disabled:opacity-50 text-white font-bold text-sm py-3.5 rounded-xl shadow-lg transition"
+                    className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-[#FF5841] via-[#E2455F] to-[#C53678] hover:from-[#ea3e26] hover:to-[#ab2261] disabled:opacity-50 text-white font-bold text-sm py-3.5 rounded-xl shadow-lg shadow-[#FF5841]/25 transition"
                   >
                     {aiLoading ? (
                       <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>

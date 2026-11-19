@@ -209,10 +209,10 @@ export default function DoctorsPage() {
                   
                   {/* Top Bar */}
                   <div className="flex items-start justify-between">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-100 to-teal-100 border border-sky-200 flex items-center justify-center text-sky-700 font-black text-xl shadow-inner">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-[#FFF0ED] via-[#FDF0F6] to-[#edfafa] border border-[#FFD5CE] flex items-center justify-center text-[#FF5841] font-black text-xl shadow-inner">
                       {doctor.userId?.name ? doctor.userId.name.replace('Dr. ', '').charAt(0) : 'D'}
                     </div>
-                    <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200">
+                    <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-[#FFF0ED] text-[#FF5841] border border-[#FFD5CE]">
                       {doctor.department}
                     </span>
                   </div>
