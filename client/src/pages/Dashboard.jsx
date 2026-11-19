@@ -17,9 +17,9 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-export default function Dashboard() {
+export default function Dashboard({ defaultTab = 'overview' }) {
   const { user, logout } = useContext(AuthContext);
-  const [patientTab, setPatientTab] = useState('overview');
+  const [patientTab, setPatientTab] = useState(defaultTab);
 
   const getRoleBadge = (role) => {
     switch (role) {
@@ -39,15 +39,15 @@ export default function Dashboard() {
       {/* Top Navigation Bar */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="w-9 h-9 rounded-xl bg-sky-600 flex items-center justify-center text-white shadow-md shadow-sky-500/20">
+          <Link to="/" className="flex items-center space-x-3 group" title="Return to Public Homepage">
+            <div className="w-9 h-9 rounded-xl bg-sky-600 flex items-center justify-center text-white shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform">
               <Activity className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-lg font-bold text-slate-900">MediSense</span>
+              <span className="text-lg font-bold text-slate-900 group-hover:text-sky-600 transition">MediSense</span>
               <span className="ml-2 text-xs font-semibold text-sky-700">v1.0</span>
             </div>
-          </div>
+          </Link>
 
           {/* Patient Quick Navigation Tabs */}
           {user?.role === 'patient' && (
@@ -95,7 +95,14 @@ export default function Dashboard() {
             </div>
           )}
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3">
+            <Link
+              to="/"
+              className="hidden md:flex items-center gap-1 text-xs font-bold text-slate-600 hover:text-sky-600 bg-slate-100 hover:bg-sky-50 px-3 py-1.5 rounded-xl border border-slate-200 transition"
+              title="Return to Public Homepage"
+            >
+              <span>Public Home</span>
+            </Link>
             <Link
               to="/queue-display"
               target="_blank"
@@ -103,7 +110,7 @@ export default function Dashboard() {
               title="Open Hospital TV Lobby Display"
             >
               <Monitor className="w-4 h-4 text-sky-600" />
-              <span>TV Lobby Display</span>
+              <span>TV Lobby</span>
             </Link>
             <div className="hidden sm:flex items-center space-x-2 border-r border-slate-200 pr-4">
               {getRoleBadge(user?.role)}

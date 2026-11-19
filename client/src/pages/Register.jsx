@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import { Activity, Lock, Mail, User, Phone, ShieldAlert, ArrowRight, Stethoscope } from 'lucide-react';
+import { Activity, Lock, Mail, User, Phone, ShieldAlert, ArrowRight, ArrowLeft, Stethoscope } from 'lucide-react';
 
 export default function Register() {
   const [formData, setFormData] = useState({
@@ -19,6 +19,9 @@ export default function Register() {
 
   const { register } = useContext(AuthContext);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const redirectTarget = location.state?.from;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -33,7 +36,17 @@ export default function Register() {
     setIsSubmitting(false);
 
     if (result.success) {
-      navigate('/dashboard');
+      if (typeof redirectTarget === 'string') {
+        navigate(redirectTarget);
+      } else if (redirectTarget?.pathname) {
+        navigate(redirectTarget.pathname);
+      } else if (formData.role === 'doctor') {
+        navigate('/doctor/dashboard');
+      } else if (formData.role === 'admin') {
+        navigate('/admin/dashboard');
+      } else {
+        navigate('/patient/dashboard');
+      }
     } else {
       setError(result.message);
     }
@@ -41,11 +54,23 @@ export default function Register() {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      
+      {/* Top Back to Home Navigation */}
+      <div className="sm:mx-auto sm:w-full sm:max-w-md px-4 mb-4">
+        <Link 
+          to="/" 
+          className="inline-flex items-center text-xs font-bold text-slate-500 hover:text-sky-600 transition group"
+        >
+          <ArrowLeft className="w-4 h-4 mr-1.5 group-hover:-translate-x-1 transition-transform" />
+          <span>Back to Public Homepage</span>
+        </Link>
+      </div>
+
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex justify-center">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-sky-600 to-blue-500 flex items-center justify-center text-white shadow-lg shadow-sky-500/30">
+          <Link to="/" className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-sky-600 to-teal-500 flex items-center justify-center text-white shadow-lg shadow-sky-500/30">
             <Activity className="w-7 h-7" />
-          </div>
+          </Link>
         </div>
         <h2 className="mt-4 text-center text-3xl font-extrabold text-slate-900 tracking-tight">
           Create MediSense Account
@@ -55,8 +80,8 @@ export default function Register() {
         </p>
       </div>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white py-8 px-4 shadow-xl shadow-slate-200/50 sm:rounded-2xl sm:px-10 border border-slate-200">
+      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md px-4 sm:px-0">
+        <div className="bg-white py-8 px-4 shadow-xl shadow-slate-200/50 sm:rounded-3xl sm:px-10 border border-slate-200">
           
           {error && (
             <div className="mb-4 bg-rose-50 border border-rose-200 text-rose-700 text-xs p-3 rounded-xl flex items-center gap-2">
