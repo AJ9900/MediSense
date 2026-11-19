@@ -309,31 +309,31 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            {/* Service 1 - Sunset Orange / Coral */}
-            <div className="bg-white p-8 rounded-3xl border border-slate-200/90 hover:border-[#FF5841] shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 rounded-2xl bg-[#FFF0ED] text-[#FF5841] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#FF5841] group-hover:text-white transition-all">
+            {/* Service 1 - Medical Teal #09A1A1 */}
+            <div className="bg-white p-8 rounded-3xl border border-slate-200/90 hover:border-[#09A1A1] shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 rounded-2xl bg-[#edfafa] text-[#09A1A1] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#09A1A1] group-hover:text-white transition-all shadow-sm">
                 <Sparkles className="w-7 h-7" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">AI Symptom Intake & Triage</h4>
               <p className="text-slate-600 text-sm leading-relaxed mb-5">
                 Describe your health symptoms in natural language. Our AI engine recommends the most appropriate specialty department and detects emergency red flags immediately.
               </p>
-              <Link to="/#ai-assistant" className="inline-flex items-center text-sm font-bold text-[#FF5841] hover:text-[#e6432d]">
+              <Link to="/#ai-assistant" className="inline-flex items-center text-sm font-bold text-[#09A1A1] hover:text-[#068485]">
                 <span>Try AI Triage</span>
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
 
-            {/* Service 2 - Medical Teal #09A1A1 */}
-            <div className="bg-white p-8 rounded-3xl border border-slate-200/90 hover:border-[#09A1A1] shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 rounded-2xl bg-[#edfafa] text-[#09A1A1] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#09A1A1] group-hover:text-white transition-all">
+            {/* Service 2 - Sunset Orange / Coral #FF5841 */}
+            <div className="bg-white p-8 rounded-3xl border border-slate-200/90 hover:border-[#FF5841] shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 rounded-2xl bg-[#FFF0ED] text-[#FF5841] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#FF5841] group-hover:text-white transition-all shadow-sm">
                 <Stethoscope className="w-7 h-7" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Specialist Doctor Appointments</h4>
               <p className="text-slate-600 text-sm leading-relaxed mb-5">
                 Search verified medical specialists by department, experience, and patient ratings. Check live calendar availability and book guaranteed consultation slots.
               </p>
-              <Link to="/doctors" className="inline-flex items-center text-sm font-bold text-[#09A1A1] hover:text-[#068485]">
+              <Link to="/doctors" className="inline-flex items-center text-sm font-bold text-[#FF5841] hover:text-[#e6432d]">
                 <span>Explore Doctors</span>
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Link>
