@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import { 
   Activity, Stethoscope, Clock, ShieldCheck, HeartPulse, 
   Sparkles, ArrowRight, CheckCircle2, ChevronRight, Star, 
-  MapPin, Calendar, Users, Phone, Bot, Search, AlertCircle,
+  MapPin, Calendar, Users, Phone, Mail, Bot, Search, AlertCircle,
   HelpCircle, MessageSquare, Zap, Compass, Building2, Send
 } from 'lucide-react';
 
