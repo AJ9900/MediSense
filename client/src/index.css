@@ -5,6 +5,23 @@
 body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background-color: #f8fafc;
-  color: #0f172a;
+  background-color: #FFFFFF;
+  color: #18181b;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: #FF5841;
+  color: #FFFFFF;
+}
+
+/* Custom Mila Gradient Utilities */
+.bg-mila-gradient {
+  background: linear-gradient(135deg, #FF5841 0%, #C53678 100%);
+}
+
+.text-mila-gradient {
+  background: linear-gradient(135deg, #FF5841 0%, #C53678 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

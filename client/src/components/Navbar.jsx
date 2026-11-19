@@ -55,13 +55,13 @@ export default function Navbar() {
           
           {/* Logo & Brand */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-sky-600 via-sky-500 to-teal-500 flex items-center justify-center text-white shadow-md shadow-sky-500/25 group-hover:scale-105 transition-transform duration-300">
+            <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#FF5841] via-[#E2455F] to-[#C53678] flex items-center justify-center text-white shadow-md shadow-[#FF5841]/30 group-hover:scale-105 transition-transform duration-300">
               <Activity className="w-6 h-6" />
             </div>
             <div>
               <div className="flex items-center space-x-1.5">
-                <span className="text-2xl font-extrabold text-slate-900 tracking-tight">Medi<span className="text-sky-600">Sense</span></span>
-                <span className="bg-teal-50 text-teal-700 text-[10px] font-bold px-2 py-0.5 rounded-full border border-teal-200">AI Care</span>
+                <span className="text-2xl font-extrabold text-slate-900 tracking-tight">Medi<span className="text-[#FF5841]">Sense</span></span>
+                <span className="bg-[#FFF0ED] text-[#FF5841] text-[10px] font-bold px-2 py-0.5 rounded-full border border-[#FFD5CE]">AI Care</span>
               </div>
               <p className="text-[11px] font-medium text-slate-500 -mt-0.5 hidden sm:block">Intelligent Hospital & Clinical Ecosystem</p>
             </div>
@@ -75,8 +75,8 @@ export default function Navbar() {
                 onClick={() => handleNavClick(link.path)}
                 className={`px-3.5 py-2 rounded-xl text-sm font-semibold transition-colors duration-200 ${
                   location.pathname === link.path
-                    ? 'text-sky-600 bg-sky-50'
-                    : 'text-slate-600 hover:text-sky-600 hover:bg-slate-50'
+                    ? 'text-[#FF5841] bg-[#FFF0ED]'
+                    : 'text-slate-600 hover:text-[#FF5841] hover:bg-slate-50'
                 }`}
               >
                 {link.name}
@@ -87,10 +87,10 @@ export default function Navbar() {
             <Link
               to="/queue-display"
               target="_blank"
-              className="flex items-center gap-1.5 px-3 py-2 text-xs font-bold text-teal-700 bg-teal-50 hover:bg-teal-100/80 rounded-xl border border-teal-200 transition ml-2"
+              className="flex items-center gap-1.5 px-3 py-2 text-xs font-bold text-[#C53678] bg-[#FDF0F6] hover:bg-[#FAD0E4]/60 rounded-xl border border-[#FAD0E4] transition ml-2"
               title="Open Hospital Live Waiting Room TV Display"
             >
-              <Monitor className="w-4 h-4 text-teal-600 animate-pulse" />
+              <Monitor className="w-4 h-4 text-[#C53678] animate-pulse" />
               <span>Live Queue TV</span>
             </Link>
           </div>
@@ -101,7 +101,7 @@ export default function Navbar() {
               <div className="flex items-center space-x-3">
                 <Link
                   to={getDashboardLink()}
-                  className="flex items-center space-x-2 bg-gradient-to-r from-sky-600 to-teal-600 hover:from-sky-700 hover:to-teal-700 text-white text-sm font-bold px-4 py-2.5 rounded-xl shadow-md shadow-sky-600/20 transition-all hover:shadow-lg"
+                  className="flex items-center space-x-2 bg-gradient-to-r from-[#FF5841] to-[#C53678] hover:from-[#e6432d] hover:to-[#b02464] text-white text-sm font-bold px-4 py-2.5 rounded-xl shadow-md shadow-[#FF5841]/25 transition-all hover:shadow-lg"
                 >
                   <User className="w-4 h-4" />
                   <span>My Dashboard</span>
@@ -118,13 +118,13 @@ export default function Navbar() {
               <>
                 <Link
                   to="/login"
-                  className="text-sm font-bold text-slate-700 hover:text-sky-600 px-4 py-2.5 rounded-xl hover:bg-slate-100 transition"
+                  className="text-sm font-bold text-slate-700 hover:text-[#FF5841] px-4 py-2.5 rounded-xl hover:bg-slate-100 transition"
                 >
                   Log In
                 </Link>
                 <Link
                   to="/register"
-                  className="flex items-center space-x-1.5 bg-sky-600 hover:bg-sky-700 text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-md shadow-sky-600/20 hover:shadow-lg hover:shadow-sky-600/30 transition-all"
+                  className="flex items-center space-x-1.5 bg-[#FF5841] hover:bg-[#e6432d] text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-md shadow-[#FF5841]/25 hover:shadow-lg transition-all"
                 >
                   <span>Get Started</span>
                   <ArrowRight className="w-4 h-4" />

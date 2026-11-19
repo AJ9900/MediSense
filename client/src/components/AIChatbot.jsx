@@ -45,7 +45,7 @@ export default function AIChatbot() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-700 hover:to-blue-700 text-white p-4 rounded-full shadow-2xl shadow-sky-600/40 flex items-center gap-2 border border-white/20 transition hover:scale-105"
+          className="bg-gradient-to-r from-[#FF5841] to-[#C53678] hover:from-[#ea3e26] hover:to-[#ab2261] text-white p-4 rounded-full shadow-2xl shadow-[#FF5841]/40 flex items-center gap-2 border border-white/20 transition hover:scale-105"
         >
           <Bot className="w-6 h-6 animate-pulse" />
           <span className="text-xs font-bold hidden sm:inline">AI Health Assistant</span>

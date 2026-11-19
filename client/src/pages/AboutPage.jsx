@@ -14,7 +14,7 @@ export default function AboutPage() {
 
       <main className="flex-1">
         {/* Banner */}
-        <section className="bg-gradient-to-r from-sky-700 via-sky-600 to-teal-600 text-white py-16 lg:py-24">
+        <section className="bg-gradient-to-r from-[#FF5841] via-[#E2455F] to-[#C53678] text-white py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
             <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-xs font-bold text-sky-100">
               <Activity className="w-3.5 h-3.5" />

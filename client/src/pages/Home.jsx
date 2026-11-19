@@ -142,16 +142,16 @@ export default function Home() {
             <div className="lg:col-span-7 space-y-8 text-center lg:text-left">
               
               {/* Badge */}
-              <div className="inline-flex items-center space-x-2 bg-sky-100/80 border border-sky-200 px-4 py-1.5 rounded-full text-xs font-bold text-sky-800 shadow-sm">
-                <span className="flex h-2 w-2 rounded-full bg-sky-500 animate-ping"></span>
-                <span className="flex h-2 w-2 rounded-full bg-sky-600 -ml-3"></span>
+              <div className="inline-flex items-center space-x-2 bg-[#FFF0ED] border border-[#FFD5CE] px-4 py-1.5 rounded-full text-xs font-bold text-[#C53678] shadow-sm">
+                <span className="flex h-2 w-2 rounded-full bg-[#FF5841] animate-ping"></span>
+                <span className="flex h-2 w-2 rounded-full bg-[#FF5841] -ml-3"></span>
                 <span>AI-Powered Healthcare Intelligence & Zero-Queue Hospital Platform</span>
               </div>
 
               {/* Main Headline */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.12]">
                 Smarter Care. <br />
-                <span className="bg-gradient-to-r from-sky-600 to-teal-500 bg-clip-text text-transparent">Zero Waiting.</span> <br />
+                <span className="bg-gradient-to-r from-[#FF5841] via-[#E2455F] to-[#C53678] bg-clip-text text-transparent">Zero Waiting.</span> <br />
                 Next-Gen Health.
               </h1>
 
@@ -164,7 +164,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                 <Link
                   to="/doctors"
-                  className="w-full sm:w-auto flex items-center justify-center space-x-2 bg-sky-600 hover:bg-sky-700 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg shadow-sky-600/25 hover:shadow-xl hover:shadow-sky-600/35 transition-all transform hover:-translate-y-0.5"
+                  className="w-full sm:w-auto flex items-center justify-center space-x-2 bg-[#FF5841] hover:bg-[#e6432d] text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg shadow-[#FF5841]/30 hover:shadow-xl hover:shadow-[#FF5841]/40 transition-all transform hover:-translate-y-0.5"
                 >
                   <Search className="w-5 h-5" />
                   <span>Find a Doctor</span>
@@ -172,10 +172,10 @@ export default function Home() {
 
                 <Link
                   to="/register"
-                  className="w-full sm:w-auto flex items-center justify-center space-x-2 bg-white hover:bg-slate-50 text-slate-800 font-bold text-base px-8 py-4 rounded-2xl border border-slate-200 shadow-sm hover:border-slate-300 transition-all"
+                  className="w-full sm:w-auto flex items-center justify-center space-x-2 bg-white hover:bg-[#FFF0ED] text-slate-800 hover:text-[#FF5841] font-bold text-base px-8 py-4 rounded-2xl border border-slate-200 shadow-sm hover:border-[#FFD5CE] transition-all"
                 >
                   <span>Get Started Free</span>
-                  <ArrowRight className="w-5 h-5 text-sky-600" />
+                  <ArrowRight className="w-5 h-5 text-[#FF5841]" />
                 </Link>
               </div>
 
@@ -190,11 +190,11 @@ export default function Home() {
                   <p className="text-xs font-medium text-slate-500">Clinical Specialties</p>
                 </div>
                 <div className="text-left">
-                  <p className="text-2xl font-black text-sky-600">&lt; 5 min</p>
+                  <p className="text-2xl font-black text-[#FF5841]">&lt; 5 min</p>
                   <p className="text-xs font-medium text-slate-500">Avg. Queue Wait Time</p>
                 </div>
                 <div className="text-left">
-                  <p className="text-2xl font-black text-teal-600">24/7</p>
+                  <p className="text-2xl font-black text-[#C53678]">24/7</p>
                   <p className="text-xs font-medium text-slate-500">AI Health Assistance</p>
                 </div>
               </div>
@@ -211,7 +211,7 @@ export default function Home() {
                   {/* Card Header */}
                   <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-600">
+                      <div className="w-10 h-10 rounded-xl bg-[#FDF0F6] border border-[#FAD0E4] flex items-center justify-center text-[#C53678]">
                         <Activity className="w-6 h-6" />
                       </div>
                       <div>
@@ -226,10 +226,10 @@ export default function Home() {
                   </div>
 
                   {/* Sample Token Live Card */}
-                  <div className="bg-gradient-to-br from-sky-600 to-sky-700 text-white rounded-2xl p-5 shadow-lg shadow-sky-600/30 space-y-3">
+                  <div className="bg-gradient-to-br from-[#FF5841] via-[#E2455F] to-[#C53678] text-white rounded-2xl p-5 shadow-lg shadow-[#FF5841]/25 space-y-3">
                     <div className="flex justify-between items-start">
                       <div>
-                        <span className="text-[11px] font-bold uppercase tracking-wider text-sky-200">OPD Priority Token</span>
+                        <span className="text-[11px] font-bold uppercase tracking-wider text-rose-100">OPD Priority Token</span>
                         <h4 className="text-2xl font-black tracking-tight mt-0.5">Token #M1001</h4>
                       </div>
                       <span className="bg-white/20 text-white text-xs font-bold px-2.5 py-1 rounded-lg backdrop-blur-sm">
@@ -237,13 +237,13 @@ export default function Home() {
                       </span>
                     </div>
 
-                    <div className="pt-2 border-t border-sky-500/50 flex justify-between items-center text-xs text-sky-100">
+                    <div className="pt-2 border-t border-white/20 flex justify-between items-center text-xs text-rose-100">
                       <div>
-                        <p className="font-medium text-sky-200">Doctor</p>
+                        <p className="font-medium text-rose-100">Doctor</p>
                         <p className="font-bold text-white text-sm">Dr. Vikram Sharma</p>
                       </div>
                       <div className="text-right">
-                        <p className="font-medium text-sky-200">Department</p>
+                        <p className="font-medium text-rose-100">Department</p>
                         <p className="font-bold text-white text-sm">Cardiology</p>
                       </div>
                     </div>

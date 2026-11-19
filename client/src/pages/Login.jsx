@@ -73,7 +73,7 @@ export default function Login() {
 
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex justify-center">
-          <Link to="/" className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-sky-600 to-teal-500 flex items-center justify-center text-white shadow-lg shadow-sky-500/30">
+          <Link to="/" className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#FF5841] to-[#C53678] flex items-center justify-center text-white shadow-lg shadow-[#FF5841]/30">
             <Activity className="w-7 h-7" />
           </Link>
         </div>

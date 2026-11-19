@@ -130,15 +130,15 @@ export default function DoctorsPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1 w-full space-y-8">
         
         {/* Page Banner */}
-        <div className="bg-gradient-to-r from-sky-600 via-sky-700 to-teal-700 rounded-3xl p-8 sm:p-12 text-white shadow-xl space-y-4">
-          <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-bold text-sky-100">
+        <div className="bg-gradient-to-r from-[#FF5841] via-[#E2455F] to-[#C53678] rounded-3xl p-8 sm:p-12 text-white shadow-xl space-y-4">
+          <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-bold text-rose-100">
             <Stethoscope className="w-3.5 h-3.5" />
             <span>Public Specialist Directory</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-black tracking-tight">
             Certified Doctors & Clinical Faculty
           </h1>
-          <p className="text-sm sm:text-base text-sky-100 max-w-2xl leading-relaxed">
+          <p className="text-sm sm:text-base text-rose-100 max-w-2xl leading-relaxed">
             Browse our verified team of medical consultants. Review clinical specializations, qualifications, experience, and OPD consultation schedules freely without any login barrier.
           </p>
         </div>
@@ -155,7 +155,7 @@ export default function DoctorsPage() {
                   onClick={() => setSelectedDepartment(dept)}
                   className={`px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition ${
                     selectedDepartment === dept
-                      ? 'bg-sky-600 text-white shadow-md shadow-sky-600/20'
+                      ? 'bg-[#FF5841] text-white shadow-md shadow-[#FF5841]/25'
                       : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                   }`}
                 >
@@ -256,7 +256,7 @@ export default function DoctorsPage() {
                 <div className="pt-6 mt-2">
                   <button
                     onClick={() => handleOpenBookingModal(doctor)}
-                    className="w-full flex items-center justify-center space-x-2 bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs py-3.5 rounded-xl shadow-md shadow-sky-600/20 hover:shadow-lg transition-all"
+                    className="w-full flex items-center justify-center space-x-2 bg-[#FF5841] hover:bg-[#e6432d] text-white font-bold text-xs py-3.5 rounded-xl shadow-md shadow-[#FF5841]/25 hover:shadow-lg transition-all"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>Book Appointment</span>

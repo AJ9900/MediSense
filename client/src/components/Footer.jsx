@@ -14,10 +14,10 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-teal-400 flex items-center justify-center text-white shadow-lg shadow-sky-500/20">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#FF5841] to-[#C53678] flex items-center justify-center text-white shadow-lg shadow-[#FF5841]/25">
                 <Activity className="w-6 h-6" />
               </div>
-              <span className="text-2xl font-extrabold text-white tracking-tight">Medi<span className="text-sky-400">Sense</span></span>
+              <span className="text-2xl font-extrabold text-white tracking-tight">Medi<span className="text-[#FF5841]">Sense</span></span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               The AI-driven healthcare intelligence and minimum-queue hospital platform designed to streamline clinical workflows, eliminate waiting room congestion, and empower patient health journeys.

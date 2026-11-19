@@ -112,15 +112,15 @@ export default function AdminCopilotDashboard() {
               <AreaChart data={forecastData}>
                 <defs>
                   <linearGradient id="colorOpd" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#0284c7" stopOpacity={0.8}/>
-                    <stop offset="95%" stopColor="#0284c7" stopOpacity={0}/>
+                    <stop offset="5%" stopColor="#FF5841" stopOpacity={0.8}/>
+                    <stop offset="95%" stopColor="#C53678" stopOpacity={0.05}/>
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
                 <XAxis dataKey="day" tick={{ fontSize: 11 }} />
                 <YAxis tick={{ fontSize: 11 }} />
                 <Tooltip />
-                <Area type="monotone" dataKey="opdPatients" stroke="#0284c7" fillOpacity={1} fill="url(#colorOpd)" />
+                <Area type="monotone" dataKey="opdPatients" stroke="#FF5841" fillOpacity={1} fill="url(#colorOpd)" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
@@ -143,7 +143,7 @@ export default function AdminCopilotDashboard() {
                 <XAxis dataKey="day" tick={{ fontSize: 11 }} />
                 <YAxis tick={{ fontSize: 11 }} domain={[0, 100]} />
                 <Tooltip />
-                <Bar dataKey="bedOccupancy" fill="#9333ea" radius={[6, 6, 0, 0]} />
+                <Bar dataKey="bedOccupancy" fill="#C53678" radius={[6, 6, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </div>
